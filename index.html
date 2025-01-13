@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#409 JavaScript: Lämpötilamuunnin</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>#409 JavaScript: Lämpötilamuunnin</h1>
+
+    <select id="menu">
+        <option value=1>Celcius->Fahrenhait</option>
+        <option value=2>Fahrenhait->Celcius</option>
+        <option value=3>Premium</option>
+    </select>
+
+    <p>
+        The value of the option selected is:
+        <span class="output"></span>
+    </p>
+
+    <div class="inputbox">
+
+        <input type="nimi" class="form-control" id="input_lampotila">
+        <button class="btn btn-secondary" id="btn_muunna">Muunna</button>
+
+
+    </div>
+
+
+    <div id="radiobox">
+        <input type="radio" id="yksi" name="desimaali" value="yksi" checked>
+        <label for="yksi">1 desimaali</label><br>
+        <input type="radio" id="kaksi" name="desimaali" value="kaksi">
+        <label for="kaksi">2 desimaali</label><br>
+        <input type="radio" id="kolme" name="desimaali" value="kolme">
+        <label for="kolme">3 desimaali</label><br><br>
+    </div>
+
+
+</body>
+
+</html>
