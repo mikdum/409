@@ -21,19 +21,22 @@
     <h1>#409 JavaScript: Lämpötilamuunnin</h1>
 
     <select id="menu">
-        <option value=1>Celcius->Fahrenhait</option>
-        <option value=2>Fahrenhait->Celcius</option>
-        <option value=3>Premium</option>
+        <option value=1>Fahrenhait->Celcius</option>
+        <option value=2>Celcius->Fahrenhait</option>
+        <option value=3>Fahrenheit->Kelvin</option>
+        <option value=4>Kelvin->Fahrenheit</option>
+        <option value=5>Kelvin->Celsius</option>
+        <option value=6>Celsius->Kelvin</option>
     </select>
 
     <p>
-        The value of the option selected is:
+        Converted value is 
         <span class="output"></span>
     </p>
 
     <div class="inputbox">
 
-        <input type="nimi" class="form-control" id="input_lampotila">
+        <input type="number" class="form-control" id="input_lampotila">
         <button class="btn btn-secondary" id="btn_muunna">Muunna</button>
 
 
@@ -41,11 +44,11 @@
 
 
     <div id="radiobox">
-        <input type="radio" id="yksi" name="desimaali" value="yksi" checked>
+        <input type="radio" id="yksi" name="desimaali" value=1 checked>
         <label for="yksi">1 desimaali</label><br>
-        <input type="radio" id="kaksi" name="desimaali" value="kaksi">
+        <input type="radio" id="kaksi" name="desimaali" value=2>
         <label for="kaksi">2 desimaali</label><br>
-        <input type="radio" id="kolme" name="desimaali" value="kolme">
+        <input type="radio" id="kolme" name="desimaali" value=3>
         <label for="kolme">3 desimaali</label><br><br>
     </div>
 
